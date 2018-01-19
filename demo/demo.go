@@ -166,7 +166,7 @@ func (t *SimpleChaincode) readRebate(stub shim.ChaincodeStubInterface, args []st
 		jsonResp = "{\"Error\":\"Failed to get state for " + name + "\"}"
 		return shim.Error(jsonResp)
 	} else if valAsbytes == nil {
-		jsonResp = "{\"Error\":\"Marble does not exist: " + name + "\"}"
+		jsonResp = "{\"Error\":\"Rebate does not exist: " + name + "\"}"
 		return shim.Error(jsonResp)
 	}
 
