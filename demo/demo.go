@@ -47,7 +47,7 @@ func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface) pb.Response {
 	}
 	
 	accountId := "gome_rebate_account"
-	rebate := &rebate{"gome_rebate_account", 3000, 0}
+	rebate := &rebate{"gome_rebate_account", 3000.0, 3000.0}
 	rebateJSONasBytes, err := json.Marshal(rebate)
 	// Initialize the chaincode
 	
